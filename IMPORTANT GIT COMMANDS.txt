@@ -6,6 +6,8 @@ git lfs install
 git lfs track "*.xyz"
 - chooses what file types should be moved to lfs server (anything above 100MB or consecutive large files)
 
+git lfs track "foldername/**"
+
 git lfs push --all origin main
 - pushes all new updates to the main branch
 
