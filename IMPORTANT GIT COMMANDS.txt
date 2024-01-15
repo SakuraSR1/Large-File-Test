@@ -1,0 +1,20 @@
+right click the local repo folder and open with git bash
+
+git lfs install
+- installs lfs to the repo
+
+git lfs track "*.xyz"
+- chooses what file types should be moved to lfs server (anything above 100MB or consecutive large files)
+
+git lfs push --all origin main
+- pushes all new updates to the main branch
+
+git add . 
+- adds files to new commit
+
+git commit -m "put comments here"
+- commit the files added and create a comment for the commit
+
+git push -u origin main
+- push the files to the main branch
+- all files tracked by lfs should go through to the main even with being over 100MB
